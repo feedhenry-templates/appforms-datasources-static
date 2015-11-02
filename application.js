@@ -16,6 +16,9 @@ app.use(cors());
 app.use('/sys', mbaasExpress.sys(securableEndpoints));
 app.use('/mbaas', mbaasExpress.mbaas);
 
+// allow serving of static files from the public directory
+app.use(express.static(__dirname + '/public'));
+
 // Note: important that this is added just before your own Routes
 app.use(mbaasExpress.fhmiddleware());
 
@@ -23,11 +26,6 @@ app.use(mbaasExpress.fhmiddleware());
  * Base Datasource endpoint for dealing with RESTful datasource requests
  */
 app.use('/static_ds', require('./lib/static-datasource.js'));
-
-// You can define custom URL handlers here, like this one:
-app.use('/', function(req, res) {
-  res.end('Your Cloud App is Running');
-});
 
 // Important that this is last!
 app.use(mbaasExpress.errorHandler());
