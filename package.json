@@ -20,7 +20,7 @@
   "dependencies": {
     "cors": "^2.7.1",
     "express": "^4.13.3",
-    "fh-mbaas-api": "5.9.4"
+    "fh-mbaas-api": "5.9.5"
   },
   "devDependencies": {
     "grunt-concurrent": "latest",
