@@ -5,7 +5,8 @@
   "main": "application.js",
   "scripts": {
     "start": "node application.js",
-    "test": "grunt unit"
+    "test": "grunt test",
+    "coverage": "grunt coverage"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "fh-mbaas-api": "~6.1.7"
   },
   "devDependencies": {
+    "grunt": "^0.4.0",
     "grunt-concurrent": "latest",
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-watch": "latest",
