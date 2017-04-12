@@ -20,7 +20,7 @@ var mbaasApiStub = {
             fhmiddleware: function () {
                 console.log('middleware')
                 return function (req, res, next) {
-                    console.log('middleware inner', req, res, next);
+                    // console.log('middleware inner', req, res, next);
                     return next()
                 };
             },
