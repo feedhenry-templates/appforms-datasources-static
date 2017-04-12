@@ -1,4 +1,5 @@
 # Feedhenry Sample Service Using Hard Coded Data for Datasources
+[![Dependency Status](https://img.shields.io/david/feedhenry-templates/appforms-datasources-static.svg?style=flat-square)](https://david-dm.org/feedhenry-templates/appforms-datasources-static)
 
 This is a sample RESTful service to load a list of **months** that is properly formatted as a Data Source.
 
